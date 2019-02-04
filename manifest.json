@@ -3,7 +3,7 @@
     "lang" : "en",
     "name" : "Sample PWA app",
     "scope" : "/sample-pwa-app/",
-    "display" : "fullscreen",
+    "display" : "standalone",
     "start_url" : "/sample-pwa-app/index.html",
     "short_name" : "Sample PWA app",
     "theme_color" : "#FFFFFF",
