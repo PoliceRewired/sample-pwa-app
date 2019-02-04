@@ -1,5 +1,5 @@
-self.addEventListener("install", function(event) {
-    console.log('WORKER: install event in progress.');
+self.addEventListener('install', function(event) {
+    console.log('service-worker install event in progress.');
     event.waitUntil(
       caches
         .open('sample-pwa-cache')
@@ -14,16 +14,17 @@ self.addEventListener("install", function(event) {
           ]);
         })
         .then(function() {
-          console.log('WORKER: install completed');
+          console.log('service-worker install completed');
         })
     );
   });
 
 self.addEventListener('activate', function(e) {
-    console.log('[ServiceWorker] Activate');
+    console.log('service-worker activate');
 });
 
 self.addEventListener('fetch', function(event) {
+    console.log('service-worker fetch requested: ' + event.request);
     event.respondWith(
       caches.match(event.request)
         .then(function(response) {
