@@ -174,7 +174,7 @@ ath.defaults = {
 	mandatory: false,			// you can't proceed if you don't add the app to the homescreen
 	autostart: true,			// show the message automatically
 	skipFirstVisit: false,		// show only to returning visitors (ie: skip the first time you visit)
-	startDelay: 3,				// display the message after that many seconds from page load
+	startDelay: 1,				// display the message after that many seconds from page load
 	lifespan: 30,				// life of the message in seconds
 	displayPace: 0,				// minutes before the message is shown again (0: display every time, default 24 hours)
 	maxDisplayCount: 0,			// absolute maximum number of times the message will be shown to the user (0: no limit)
